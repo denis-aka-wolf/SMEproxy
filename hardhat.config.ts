@@ -32,7 +32,12 @@ const config: HardhatUserConfig = {
     polygon: {
       url: "https://polygon.rpc.thirdweb.com/",
       chainId: 137,
-      accounts: [vars.get("PK_BNB")]
+      accounts: [vars.get("PK_POLYGON")]
+    },
+    amoy: {
+      url: "https://polygon.rpc.thirdweb.com/",
+      chainId: 137,
+      accounts: [vars.get("PK_POLYGON")]
     },
     sep: {
       url: "https://sepolia.infura.io/v3/",
