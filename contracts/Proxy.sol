@@ -20,6 +20,6 @@ import "/contracts/modules/dynamicRouter/DynamicRouter.sol";
  *      только через библиотеки для раздельных хранилищ
 **/
 contract Proxy is DynamicRouter{
-  ///@dev Пример структуры UpdateProxy - [[0xdd875e44bf1d52823b242cc06ba0c798a33729d6 ,[0x9f889b6e,0xdfb80831,0x63de14fc,0xb2494df3,0x4b503f0b,0x0abe1796]]] 
+  ///@dev Пример структуры UpdateProxy - [[0xdd875e44bf1d52823b242cc06ba0c798a33729d6,[0x9f889b6e,0xdfb80831,0x63de14fc,0xb2494df3,0x4b503f0b,0x0abe1796]]] 
   constructor(DynamicRouterStorage.moduleDefinition[] memory modules) DynamicRouter(modules){} 
 }

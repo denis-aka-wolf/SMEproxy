@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"custom:version": "1.0.0",
+			"details": "Миксин модификатора владельца.      Для использования необходимо импортировать:      import {Ownable} from \"/contracts/mixins/Ownable.sol\";      Затем наследовать: contract MyContact is Ownable      И использовать: function myF() external onlyOwner{}      ",
+			"kind": "dev",
+			"methods": {},
+			"title": "Ownable",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Миксин Ownable цель которого является предоставление        классического модификатора onlyOwner()      Зависим от внешней библиотеки openzeppelin/contracts/Context.sol*",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/mixins/Ownable.sol": "Ownable"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/lib/@openzeppelin/contracts/Context.sol": {
+			"keccak256": "0x493033a8d1b176a037b2cc6a04dad01a5c157722049bbecf632ca876224dd4b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6a708e8a5bdb1011c2c381c9a5cfd8a9a956d7d0a9dc1bd8bcdaf52f76ef2f12",
+				"dweb:/ipfs/Qmax9WHBnVsZP46ZxEMNRQpLQnrdE4dK8LehML1Py8FowF"
+			]
+		},
+		"contracts/mixins/Ownable.sol": {
+			"keccak256": "0x2e65c48323cec5462e6dbc5cbcb5fc3c5b125af0e67599740cad936955ce7a70",
+			"license": "CC0",
+			"urls": [
+				"bzz-raw://26d30994dc70d022c0b99f1a24b424affcfe06de4de46d28bc9e4838a05bbc01",
+				"dweb:/ipfs/QmZtKN1dH19xF87XH9VUePNUmRjnHceRvTrBWxwtXSKW1c"
+			]
+		},
+		"contracts/storage/LibOwnableStorage.sol": {
+			"keccak256": "0xbeb030b991fbd2f5674b229107dd88a88fabc4605716511911e65a6bff677ed3",
+			"license": "CC0",
+			"urls": [
+				"bzz-raw://b71ea759f699c2bc13afbb596a01c3d42b70be33c76898290e27fd9dc67b67c6",
+				"dweb:/ipfs/QmXtx9Hv9Nw6m3cnAaL7dHcsd2tFWuBPLr6iMpaxKTF59k"
+			]
+		}
+	},
+	"version": 1
+}

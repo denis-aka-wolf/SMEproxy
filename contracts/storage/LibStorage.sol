@@ -25,7 +25,7 @@ library LibStorage {
     }
 
     /// @dev возвращает селектор хранилища по сигнатуре "name.storage"
-function selectorStorage(string memory _signature) internal pure returns(bytes32){
+    function selectorStorage(string memory _signature) internal pure returns(bytes32){
         return keccak256(bytes(_signature));
     }
 }

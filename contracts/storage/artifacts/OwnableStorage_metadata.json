@@ -1,0 +1,161 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "SeTimestampExp",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "SetGracePeriod",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "SetNewOwner",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "SetOwner",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "getGracePeriod",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getNewOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getTimestampExp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:version": "1.0.0",
+			"details": "Логику смотри в модуле SMEamb",
+			"events": {
+				"SeTimestampExp()": {
+					"details": "Установлено новое значение timestampExp"
+				},
+				"SetGracePeriod()": {
+					"details": "Установлено новое значение грейс периода"
+				},
+				"SetNewOwner()": {
+					"details": "Установлено новое значение newOwner"
+				},
+				"SetOwner()": {
+					"details": "Установлено новое значение newOwner"
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"getOwner()": {
+					"details": "геттеры"
+				},
+				"setGracePeriod(uint256)": {
+					"details": "установка gracePeriod"
+				},
+				"setTimestampExp(uint256)": {
+					"details": "установка timestampExp"
+				},
+				"setnewOwner(address)": {
+					"details": "установка newOwner"
+				},
+				"setowner(address)": {
+					"details": "установка owner"
+				}
+			},
+			"stateVariables": {
+				"SLOT": {
+					"details": "Слот хранилища"
+				}
+			},
+			"title": "OwnableStorage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"notice": "Библиотека хранилища амбассадорки*",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/storage/LibSMEamb.sol": "OwnableStorage"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 32000
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/storage/LibSMEamb.sol": {
+			"keccak256": "0x8ef8853e937013e15fcdcb1e789ddcd64a1723c899ebd20de73628c9ce7bb48f",
+			"license": "CC0",
+			"urls": [
+				"bzz-raw://6729174060b4401a2eb6df31a064b928d52b7536ea43fc6463f283959f47de6f",
+				"dweb:/ipfs/Qmcttg9YKFfZem4Ue6EQwP75di3hvfdXYbKp8eceQSx55Y"
+			]
+		}
+	},
+	"version": 1
+}

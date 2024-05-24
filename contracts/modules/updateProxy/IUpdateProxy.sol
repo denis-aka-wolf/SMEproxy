@@ -1,16 +1,21 @@
 // SPDX-License-Identifier: CC0
 pragma solidity = 0.8.19 || 0.8.20 || 0.8.23;
 
-import "../dynamicRouter/DynamicRouterFunction.sol";
-import "./UpdateProxyFunction.sol";
+import {DynamicRouterStorage} from "/contracts/storage/LibDynamicRouterStorage.sol";
 
 /**
-* @dev Интерфейс модуля UpdateProxy
+* @dev Интерфейс модуля UpdateProxy.
+*      Зависимость от "/contracts/storage/LibDynamicRouterStorage.sol"
 */
 interface IUpdateProxy{
+  /// @dev структура всех селекторов
+  struct modules {
+      bytes4 selector;
+      address module;
+  }
 
   /// @dev обновление селекторов модулей		
-  function updateModules(moduleDefinition[] memory _modules) external ;
+  function updateModules(DynamicRouterStorage.moduleDefinition[] memory _modules) external ;
   
   /// @dev получение всех модулей
   function getModules() external view returns(modules[] memory _modules);

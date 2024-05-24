@@ -1,0 +1,167 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_initialized",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_module",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes4",
+						"name": "_selector",
+						"type": "bytes4"
+					}
+				],
+				"name": "UpdateModule",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "_selector",
+						"type": "bytes4"
+					}
+				],
+				"name": "getImp",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getImpl",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "_selector",
+						"type": "bytes4"
+					}
+				],
+				"name": "getModule",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getSelectors",
+				"outputs": [
+					{
+						"internalType": "bytes4[]",
+						"name": "",
+						"type": "bytes4[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:version": "1.0.0",
+			"details": "В DynamicRouterStorage находятся функции работы с хранилищем     Отделены от имплементации модуля для более безопасного обновления     всех последующих имплементаций. Не имеет зависимостей.     Для корректного обновления модуля реализована функция updateModules.",
+			"events": {
+				"UpdateModule(address,address,bytes4)": {
+					"details": "Событие обновления имплементации модуля"
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"getImp(bytes4)": {
+					"details": "Возвращает по селектору адрес имплементации"
+				},
+				"getImpl()": {
+					"details": "Возвращает имплементации"
+				},
+				"getModule(bytes4)": {
+					"details": "Возвращает модуль по селектору"
+				},
+				"getSelectors()": {
+					"details": "Возвращает массив селекторов"
+				},
+				"updateModules(DynamicRouterStorage.moduleDefinition[])": {
+					"details": "Обновление модулей ",
+					"params": {
+						"modules": "- структура moduleDefinition:     address module - адрес имплементации     bytes4[] selectors - селектор функции"
+					}
+				}
+			},
+			"stateVariables": {
+				"SLOT": {
+					"details": "Слот хранилища"
+				}
+			},
+			"title": "DynamicRouterStorage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/storage/LibDynamicRouterStorage.sol": "DynamicRouterStorage"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/storage/LibDynamicRouterStorage.sol": {
+			"keccak256": "0x2fa569815a082079494a820718338e61542c1439918f4b53b5c2ba9036bb2c6a",
+			"license": "CC0",
+			"urls": [
+				"bzz-raw://8be3146704629a8c4faf3a67ac02fa7a754d3a241318f9aacedd2858ca91f78e",
+				"dweb:/ipfs/QmYtapi3XejvpXxiJDQEtpB6V5mgCtYrpUzDpJ986JEbFk"
+			]
+		}
+	},
+	"version": 1
+}

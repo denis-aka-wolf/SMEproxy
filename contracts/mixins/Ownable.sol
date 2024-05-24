@@ -32,7 +32,7 @@ abstract contract Ownable is Context {
     /**
      * @dev Инициализация владельца. Используется единократно для модулей в конструкторах.
      **/
-    function _init() internal {
+    function _initOwnable() internal {
         if(OwnableStorage.getOwner() == address(0)){
             OwnableStorage.setowner(_msgSender());
             OwnableStorage.setGracePeriod(7 days);

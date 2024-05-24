@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.23+commit.f704f362"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "operator",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "onERC721Received",
+				"outputs": [
+					{
+						"internalType": "bytes4",
+						"name": "",
+						"type": "bytes4"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Interface of ERC721 token receiver.",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/mixins/ERC721A.sol": "ERC721A__IERC721Receiver"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/mixins/ERC721A.sol": {
+			"keccak256": "0x788ac9c9798d8d4ce2c244e90160b239b71547740b0e4ac9fb0e6e58e39ca0b4",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://bd4f9209e27c37977c6a101de3b725d4ca9f33e569d140d53ec027af1fb804ff",
+				"dweb:/ipfs/Qme1fvUTAjLqKVGwMeZWybqcvdMFuDKopzHUS1skKSXFFN"
+			]
+		},
+		"contracts/mixins/IERC721A.sol": {
+			"keccak256": "0xc9a2a00612e0d121aef3f716877ada17177d5b2d5a4c780d22cade46da2ff294",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://1435542fc553d2fb9181191f126a1f97e2cc5570c2459c862f54ba415a22bf02",
+				"dweb:/ipfs/QmaQJ14ajkHgymY5TtoxHnpiN5u4TpwXCqKr2B6DM8SHkn"
+			]
+		},
+		"contracts/storage/LibSMEambStorage.sol": {
+			"keccak256": "0x4e9f1d3d44a9a36d2baa786450d47c133d39dfd496f69c9b8091ef301d19ce71",
+			"license": "CC0",
+			"urls": [
+				"bzz-raw://215505a9e3038ad340fcdd5bdc03ec9fe1bb8930a5943f05b01e82cecce5dc68",
+				"dweb:/ipfs/QmTnZbveD5riNuPRpJdakeZnbcGgmL41Z9fuEBqC5uG1yx"
+			]
+		}
+	},
+	"version": 1
+}
